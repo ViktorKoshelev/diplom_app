@@ -1,0 +1,104 @@
+.app {
+    border: 1px solid black;
+    display: flex;
+}
+
+body {
+    height: 100%;
+}
+
+.filled {
+    fill: blueviolet;
+}
+
+.empty {
+    fill: white;
+}
+
+.cell {
+    stroke: black;
+    stroke-width: 1px;
+    stroke-linecap: butt;
+}
+
+.row {
+    height: 120px;
+}
+
+.row:not(:first-child) {
+    margin-top: -35px;
+}
+
+.row:nth-child(even) {
+    margin-left: -35px;
+}
+
+.grid {
+    margin-left: 50px;
+    transform: scale(0.7) translate(-22%, -18%);
+}
+
+.secondRow {
+    margin-top: -35px;
+}
+
+.octagonRight {
+    margin-left: 35px;
+}
+
+.hexagonCenter {
+    margin-left: 85px;
+}
+
+.result {
+    transform: scale(0.35) translate(-34%, -14px);
+    position: absolute;
+}
+
+.wide {
+    transform:  scale(0.35) translate(-73%, -14px);
+}
+
+.result > div {
+    display: flex;
+}
+
+.code, .count {
+    text-align: center;
+    border: inherit;
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border: 1px solid black;
+    height: 140px;
+    width: 100%;
+    position: relative;
+}
+
+.results {
+    
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 4px 0px;
+    position: fixed;
+    right: 10px;
+}
+
+.eiler {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: inline-block;
+    margin: 12px;
+    font-size: 48px;
+    white-space: nowrap;
+}
+
+.P, .K {
+    font-weight: bold;
+    text-align: center;
+    border: inherit;
+}
